@@ -3,6 +3,7 @@
 <div id="home" >
 <div class="container">
 <div class="row">
+    <section id="home">
 <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 ">
 <div id="carousel-slider" data-ride="carousel" class="carousel slide  animate-in" data-anim-type="fade-in-up">
 
@@ -53,14 +54,7 @@ MERA BHARAT!!! MERI SARKAR!!!
 <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
 <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
 </div>-->
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+
 </div>
 </div>
 </div>
@@ -73,7 +67,7 @@ MERA BHARAT!!! MERI SARKAR!!!
 <!--PRIICING SECTION END-->
 <!--WORK SECTION START-->
 <!-- works section -->
-
+<section id="services" >
 <div class="row text-center header">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 animate-in" data-anim-type="fade-in-up">
 <h3>Our Services</h3>
@@ -85,7 +79,7 @@ MERA BHARAT!!! MERI SARKAR!!!
 
 <!--WORK SECTION END-->
 <!--SERVICE SECTION START-->
-<section id="services" >
+
     <div id="works"  class=" clearfix grid"> 
     <figure class="effect-oscar  wowload fadeIn">
         <img src="images/portfolio/11.jpg" alt="img01"/>
@@ -269,12 +263,13 @@ Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
 
 <!--TEAM SECTION START-->
 
-<section id="team" >
+
 <div class="container">
 <div class="row text-center header animate-in" data-anim-type="fade-in-up">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <h3>Team Members </h3>
 <hr />
+<section id="team" >
 </div>
 </div>
 <div class="row animate-in" data-anim-type="fade-in-up">

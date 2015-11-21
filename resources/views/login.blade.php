@@ -11,23 +11,28 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <div class="wrapper">
   <h1>Login An Account</h1>
-  <form class="form" method="post" action="log">
+   {!!Form::open(array('url'=>'log', 'class'=>'form' ))!!}
+                    
+  
     {!!Form::token()!!}
-    <input type="text" class="name" placeholder="ADHAAR CARD" name="adhaar">
+{!! Form::text('adhaar', Input::old('adhaar'), array('required','placeholder'=>'ADHAAR CARD')) !!}
     <div>
       <p class="name-help">Please enter your first and last name.</p>
     </div>
-    <input type="email" class="email" placeholder="Email" name="email">
+    {!! Form::email('email', Input::old('email'), array('required','placeholder'=>'hello@gmail.com')) !!}
      <div>
       <p class="email-help">Please enter your current email address.</p>
     </div>
-    <input type="password" class="name" placeholder="Password" name="password">
+    {!! Form::password('password', array('required','placeholder'=>'Password')) !!}
     <div>
       <p class="name-help">Please your password.</p>
     </div>
-
-    <input type="submit" class="submit" >
+{!! Form::button('SUBMIT', array('type'=>'submit','class'=>'submit')) !!}
+    
   </form>
+
+                    {!! Form::close() !!}
+                
 </div>
     
     

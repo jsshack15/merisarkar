@@ -1,13 +1,15 @@
 <?php
-
 namespace App\Http\Controllers;
-
+use App\Models\User;
+use DB;
+use Session;
+use Illuminate\Validation;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Views;
-use Redirect;
 use Input;
 use GuzzleHttp\Client;
  class PagesController extends BaseController
@@ -155,5 +157,45 @@ public function pincode()
          // return Redirect::to('https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30');
       //return https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30;
     }
+    public function log()
+    {
+      $user=array(
+        "email"=>Input::get('email'),
+        "adhaar"=>Input::get('adhaar'),
+        "password"=>Input::get('password')
+        );
+      if(\Auth::attempt($user))
+    {
+      Session::put('email', $user['email']);
+     $name=DB::table('users')->where('adhaar',$user['adhaar'])->pluck('name');
+      Session::put('name', $name);
+      Session::put('adhaar', $user['adhaar']);
+
+
+      return Redirect::to('/');
+    }
+    else
+    {
+      return Redirect::to('login')->withInput();
+
+    }
+
+    }
+    public function logout()
+  {
+    if(\Auth::check())
+    {
+      \Auth::logout();
+      Session::forget('name');
+      Session::forget('email');
+      Session::forget('adhaar');
+
+      return Redirect::to('/'); 
+    }
+    else
+    {
+      return Redirect::to('login'); 
+    }
+  }
 
 }
