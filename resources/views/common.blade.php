@@ -14,7 +14,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 
 <!-- font awesome -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 <!--  Table CSS -->
 <link href="assets/css/table.css" rel="stylesheet">
 <!-- bootstrap -->

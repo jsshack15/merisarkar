@@ -31,3 +31,5 @@ Route::get('logout',array('as'=>'logout','uses'=>'PagesController@logout'));
 
 
 Route::get('electricity', array('as'=>'electricity','uses'=>'VisionController@electricity'));
+Route::get('water', array('as'=>'water','uses'=>'VisionController@water'));
+Route::get('house', array('as'=>'house','uses'=>'VisionController@house'));

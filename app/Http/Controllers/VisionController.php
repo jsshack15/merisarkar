@@ -21,19 +21,52 @@ use GuzzleHttp\Client;
       if(\Auth::check())
       {
         $result=DB::table('electricity')->where('adhaar',Session::get('adhaar'))->get();
-    //   $result=json_encode($result);
-     // var_dump($result);
-//$rarray=array();
-$i=0;
-foreach($result as $r)
-{
-$result[$i]=(array)$r;
-$i++;
-//$rarray=$rarray+$r;
-}
-//dd($result);
-
-       return \View::make('elect',['response'=> $result]);
+        $i=0;
+        foreach($result as $r)
+        {
+          $result[$i]=(array)$r;
+          $i++;
+          }
+          //dd($result);
+           return \View::make('elect',['response'=> $result]);
+      }
+      else
+      {
+        return Redirect::to('login');
+      }
+    }
+    public function water()
+    {
+      if(\Auth::check())
+      {
+        $result=DB::table('water')->where('adhaar',Session::get('adhaar'))->get();
+        $i=0;
+        foreach($result as $r)
+        {
+          $result[$i]=(array)$r;
+          $i++;
+          }
+          //dd($result);
+           return \View::make('water',['response'=> $result]);
+      }
+      else
+      {
+        return Redirect::to('login');
+      }
+    }
+    public function house()
+    {
+      if(\Auth::check())
+      {
+        $result=DB::table('house')->where('adhaar',Session::get('adhaar'))->get();
+        $i=0;
+        foreach($result as $r)
+        {
+          $result[$i]=(array)$r;
+          $i++;
+          }
+          //dd($result);
+           return \View::make('house',['response'=> $result]);
       }
       else
       {

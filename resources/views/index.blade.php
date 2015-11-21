@@ -27,6 +27,7 @@ OUR VISION
 <p style="color:white">
 We aspire to make retrieving information for users easy..by providing all the information on a single platform.
 Through this, we intend to visualise the technologies that can be incorporated in future for user convenience.
+<br><br><br>
 </p>
 </div>
 
@@ -224,16 +225,16 @@ Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
 <hr />
 </div>
 </div>
-<a href="{{URL::asset('/electricity')}}"
+<a href="{{URL::asset('/electricity')}}">
 <div class="row animate-in" data-anim-type="fade-in-up">
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <div class="services-wrapper">
 <i class="ion-lightbulb"></i>
 <h3>ELECTRICITY BILL</h3>
-
-
 </div>
 </div>
+</a>
+<a href="{{URL::asset('/house')}}">
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <div class="services-wrapper">
 <i class="ion-home"></i>
@@ -241,6 +242,7 @@ Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
 
 </div>
 </div>
+</a>
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <div class="services-wrapper">
 <i class="ion-ios-telephone"></i>
@@ -248,6 +250,7 @@ Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
 
 </div>
 </div>
+<a href="{{URL::asset('/water')}}">
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <div class="services-wrapper">
 <i class="ion-waterdrop"></i>
@@ -255,6 +258,7 @@ Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
 
 </div>
 </div>
+</a>
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <div class="services-wrapper">
 <i class="ion-android-bus"></i>
