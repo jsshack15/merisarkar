@@ -74,7 +74,7 @@ E- GOVERNANCE
 </div>
 <div class="navbar-collapse collapse">
 <ul class="nav navbar-nav navbar-right">
-<li><a href="#home">HOME</a></li>
+<li><a href="{{URL::asset('/')}}">HOME</a></li>
 @if(Session::has('name'))
 <li><a href="{{URL::asset('/logout')}}">LOGOUT</a></li>
 @else

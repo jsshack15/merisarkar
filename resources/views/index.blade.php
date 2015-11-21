@@ -224,11 +224,13 @@ Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
 <hr />
 </div>
 </div>
+<a href="{{URL::asset('/electricity')}}"
 <div class="row animate-in" data-anim-type="fade-in-up">
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <div class="services-wrapper">
 <i class="ion-lightbulb"></i>
 <h3>ELECTRICITY BILL</h3>
+
 
 </div>
 </div>

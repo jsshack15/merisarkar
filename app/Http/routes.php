@@ -28,3 +28,6 @@ Route::get('login',array('as'=>'rail','uses'=>'PagesController@login'));
 Route::post('log', array('before'=>'csrf','uses'=>'PagesController@log'));
 Route::get('logout',array('as'=>'logout','uses'=>'PagesController@logout'));
 
+
+
+Route::get('electricity', array('as'=>'electricity','uses'=>'VisionController@electricity'));
