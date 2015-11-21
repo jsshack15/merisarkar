@@ -3,23 +3,23 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserTable extends Migration
+class CreateElectricityTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-   public function up()
+    public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+         Schema::create('electricity', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('fname');
-            $table->string('lname');
-            $table->string('email')->unique();
-            $table->string('password', 60);
-            $table->string('address', 100);
-            $table->integer('mobile');
+            $table->string('adhaar');
+            $table->integer('unit');
+             $table->string('month');
+              $table->string('year');
+
+            $table->integer('amount');
             $table->rememberToken();
             $table->timestamps();
         });
@@ -32,7 +32,6 @@ class CreateUserTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
-        
+         Schema::drop('electricity');
     }
 }

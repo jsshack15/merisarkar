@@ -11,16 +11,17 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <div class="wrapper">
   <h1>Login An Account</h1>
-  <form class="form" method="post" action="yourpage.html">
-    <input type="text" class="name" placeholder="ADHAAR CARD">
+  <form class="form" method="post" action="log">
+    {!!Form::token()!!}
+    <input type="text" class="name" placeholder="ADHAAR CARD" name="adhaar">
     <div>
       <p class="name-help">Please enter your first and last name.</p>
     </div>
-    <input type="email" class="email" placeholder="Email">
+    <input type="email" class="email" placeholder="Email" name="email">
      <div>
       <p class="email-help">Please enter your current email address.</p>
     </div>
-    <input type="password" class="name" placeholder="Password">
+    <input type="password" class="name" placeholder="Password" name="password">
     <div>
       <p class="name-help">Please your password.</p>
     </div>

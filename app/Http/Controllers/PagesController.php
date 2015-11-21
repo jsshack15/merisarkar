@@ -55,8 +55,6 @@ public function pin()
       
       $body=json_decode($response->getBody(),true);
       $res=$body["records"];
-     
-      //dd($body);
         return \View::make('result',['response'=> $res]);
      //   https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30&filters[state]=%22maharashtra%22
          // return Redirect::to('https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30');
