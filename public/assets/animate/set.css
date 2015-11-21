@@ -596,12 +596,12 @@ figure.effect-oscar {
 	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);*/
 }
 
-/*figure.effect-oscar img {
-	opacity: 0.9;
+figure.effect-oscar img {
+	opacity: 40;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
-*/
+
 figure.effect-oscar figcaption {
 	padding: 15%;
 /*	background-color: rgba(58,52,42,0.7);

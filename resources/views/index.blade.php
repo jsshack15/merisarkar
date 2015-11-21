@@ -11,24 +11,24 @@
 <div class="item active">
 
 <h3>
-FOR THE PEOPLE
+<b>FOR THE PEOPLE</b>
 </h3>
-<p style="color:white">
+<h4 style="color:white">
 Electronic governance or e-governance is the application of information and communication technology (ICT) 
 for delivering government services, integration of various stand-alone systems and services between G2B,G2G and G2C.
 Through e-governance, government services will be made available to citizens in a convenient, 
 efficient and transparent manner. 
-</p>
+</h4>
 </div>
 <div class="item">
 <h3>
-OUR VISION
+<b>OUR VISION</b>
 </h3>
-<p style="color:white">
+<h4 style="color:white">
 We aspire to make retrieving information for users easy..by providing all the information on a single platform.
 Through this, we intend to visualise the technologies that can be incorporated in future for user convenience.
 <br><br><br>
-</p>
+</h4>
 </div>
 
 </div>
@@ -43,10 +43,10 @@ Through this, we intend to visualise the technologies that can be incorporated i
 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 scroll-me">
 
 
-<p >
+<h3 >
 MERA BHARAT!!! MERI SARKAR!!!
 
-</p>
+</h3>
 <!--<div class="social">
 <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
 <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>

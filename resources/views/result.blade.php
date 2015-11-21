@@ -6,8 +6,8 @@
 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 scroll-me">
 	<div id="container">
 <div class="whole ">
-		<div class="type1 ultimate">
-		<p>name</p>
+		<div class="type ultimate">
+		<p>Name</p>
 		</div>
 	<div class="plan">
 
