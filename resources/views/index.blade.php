@@ -136,7 +136,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>IMPORTS</h2>
             <p>State wise list of imports in an year<br>
-            <a href="images/portfolio/17.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/wholesale')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
@@ -144,7 +144,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>HEALTH CENTRES</h2>
             <p>State wise list of Community Health Centres<br>
-            <a href="images/portfolio/18.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/information')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
@@ -180,43 +180,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         </figcaption>
     </figure>
     
-   </div><!--
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<div class="services-wrapper">
-<i class="ion-monitor"></i>
-<h3>Consectetur tellus nec</h3>
-Morbi mollis lectus et ipsum sollicitudin varius.
-Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-</div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<div class="services-wrapper">
-<i class="ion-pinpoint"></i>
-<h3>Consectetur tellus nec</h3>
-Morbi mollis lectus et ipsum sollicitudin varius.
-Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-</div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<div class="services-wrapper">
-<i class="ion-tshirt-outline"></i>
-<h3>Consectetur tellus nec</h3>
-Morbi mollis lectus et ipsum sollicitudin varius.
-Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-</div>
-</div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-<div class="services-wrapper">
-<i class="ion-speedometer"></i>
-<h3>Consectetur tellus nec</h3>
-Morbi mollis lectus et ipsum sollicitudin varius.
-Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-</div>
-</div>
-</div>
-</div>
-</section>-->
-<!--SERVICE SECTION END-->
+   </div>
 <section id="work" >
 <div class="container">
 <div class="row text-center header">
