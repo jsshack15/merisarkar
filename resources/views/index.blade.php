@@ -92,7 +92,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>HOSPITALS</h2>
             <p>State wise list of hospitals in India<br>
-            <a href="images/portfolio/11.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/information')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -108,7 +108,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>EDUCATION</h2>
             <p>State wise list of availability of Education loans<br>
-            <a href="images/portfolio/13.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/institution')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -124,7 +124,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>RAILWAYS</h2>
             <p>Railway Time Table<br>
-            <a href="images/portfolio/15.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/railway')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
      
@@ -133,7 +133,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>PINCODE </h2>
             <p>List of pincode directory with contacts <br>
-            <a href="images/portfolio/16.png" title="1" data-gallery>View more</a></p>            
+            <a href={{URL::asset('/pincode')}} title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
@@ -157,7 +157,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>BLOOD<BR>BANK</h2>
             <p>State wise list of Blood Bank Repositries<br>
-            <a href="images/portfolio/19.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/information')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
@@ -165,7 +165,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>TOURISM</h2>
             <p>Tourism Satistics over the past 10 years<br>
-            <a href="images/portfolio/20.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/tourist')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
@@ -173,7 +173,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>WPI</h2>
             <p>Wholesale price index of Arhar dal<br>
-            <a href="images/portfolio/21.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/wholesale')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
@@ -181,7 +181,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>INSTITUTIONS</h2>
             <p>State wise list of stand alone institutions<br>
-            <a href="images/portfolio/22.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/institution')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
     
