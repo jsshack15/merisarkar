@@ -54,13 +54,11 @@ public function pin()
           $client = new Client(['base_uri' => 'https://data.gov.in/api/datastore/']);
           $category=Input::get('category');
           $response = $client->request('GET', 'resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30&filters['.$category.']='.$search);
-      //dd($category);
+     
       $body=json_decode($response->getBody(),true);
       $res=$body["records"];
         return \View::make('result',['response'=> $res]);
-     //   https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30&filters[state]=%22maharashtra%22
-         // return Redirect::to('https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30');
-      //return https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30;
+    
     }
 
     public function search_rail()
@@ -72,25 +70,19 @@ public function pin()
       
       $body=json_decode($response->getBody(),true);
       $res=$body["records"];
-     //$result=$res[0]["Train No."];    //"'00851'"
-     //$result1=substr($result,1,-1);
-   //   $i=0;
+     
      $result=array();
 
       foreach($res as $r)
       {
         if(substr($r["Train No."],1,-1)==strval($search))
         {
-       //  dd("yes");
+     
           $result=$result+$r;
         }
       }
-  //var_dump($result);
-   // dd($result["train Name"]);
+  //
        return \View::make('railway',['name'=> $result["train Name"],'deptime'=>$result["Departure time"],'sname'=>$result["source Station Name"],'atime'=>$result["Arrival time"],'dname'=> $result["Destination Station Name"]]);
-     //   https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30&filters[state]=%22maharashtra%22
-         // return Redirect::to('https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30');
-      //return https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30;
     }
         public function tourist()
     {
@@ -101,12 +93,8 @@ public function pin()
       $body=json_decode($response->getBody(),true);
       $res=$body["records"];
      
-      //dd($body);
         return \View::make('tourists',['response'=> $res]);
-     //   https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30&filters[state]=%22maharashtra%22
-         // return Redirect::to('https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30');
-      //return https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30;
-    }
+        }
     public function institution()
     {
         $search=Input::get('obj');
@@ -117,24 +105,19 @@ public function pin()
       
       $body=json_decode($response->getBody(),true);
       $res=$body["records"];
-     
-      //dd($category);
+ 
       $result=array();
 
       foreach($res as $r)
       {
         if(substr($r[$category],1,-1)==strval($search))
         {
-       //  dd("yes");
+ 
           $result=$result+$r;
         }
       }
-     // dd($result);
-       return \View::make('result',['response'=> $result]);
-     //   https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30&filters[state]=%22maharashtra%22
-         // return Redirect::to('https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30');
-      //return https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30;
-    }
+
+     }
 public function wholesale()
     {
         $search=Input::get('obj');
@@ -145,12 +128,9 @@ public function wholesale()
       $body=json_decode($response->getBody(),true);
       $res=$body["records"];
      
-      //dd($body);
+    
         return \View::make('wholesale',['response'=> $res]);
-     //   https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30&filters[state]=%22maharashtra%22
-         // return Redirect::to('https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30');
-      //return https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30;
-    }
+      }
 
 public function pincode()
     {
@@ -158,16 +138,11 @@ public function pincode()
           $client = new Client(['base_uri' => 'https://data.gov.in/api/datastore/']);
           $category=Input::get('category');
           $response = $client->request('GET', 'resource.json?resource_id=0a076478-3fd3-4e2c-b2d2-581876f56d77&api-key=f679eef3a738730ea25505cec1a62c30&filters['.$category.']='.$search);
-      //dd($category);
-      
+
       $body=json_decode($response->getBody(),true);
       $res=$body["records"];
-     
-    //dd($res);
+ 
         return \View::make('pincode',['response'=> $res]);
-     //   https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30&filters[state]=%22maharashtra%22
-         // return Redirect::to('https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30');
-      //return https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30;
     }
     public function log()
     {
