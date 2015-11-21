@@ -7,6 +7,7 @@
 	  {!!Form::open(array('url'=>'tour'))!!}
 	  <span>Search By Year</span>
 	  {!! Form::text('obj', Input::old('obj'),array('required','placeholder'=>'Eg: 2010')) !!}
+	 
                     {!!Form::token()!!}
 
 	

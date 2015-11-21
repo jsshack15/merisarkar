@@ -7,6 +7,9 @@
 	  {!!Form::open(array('url'=>'search'))!!}
 	  <span>Search By State</span>
 	  {!! Form::text('obj', Input::old('obj'),array('required','placeholder'=>'Eg: Maharashtra')) !!}
+	  {!! Form::select('category', array('state' => 'State', 'name' => 'Name','city'=>'City','contact'=>'Contact')) !!}
+	  <!-- <input class="field" name="agree" type="checkbox" value="1"> -->	
+
                     {!!Form::token()!!}
 
 	

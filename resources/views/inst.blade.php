@@ -7,6 +7,7 @@
 	  {!!Form::open(array('url'=>'inst'))!!}
 	  <span>Search By State</span>
 	  {!! Form::text('obj', Input::old('obj'),array('required','placeholder'=>'Eg: Maharashtra')) !!}
+	  {!! Form::select('category', array('State NAME' => 'State', 'Institution NAME' => 'Name','Institution TYPE'=>'Type')) !!}
                     {!!Form::token()!!}
 
 	

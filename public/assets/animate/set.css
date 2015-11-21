@@ -597,7 +597,7 @@ figure.effect-oscar {
 }
 
 figure.effect-oscar img {
-	opacity: 40;
+	opacity: 0.9;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
