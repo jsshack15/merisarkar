@@ -103,7 +103,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>EDUCATION</h2>
             <p>State wise list of availability of Education loans<br>
-            <a href="{{URL::asset('/institution')}}" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/information')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
      <figure class="effect-oscar  wowload fadeInUp">
@@ -176,7 +176,7 @@ MERA BHARAT!!! MERI SARKAR!!!
         <figcaption>
             <h2>INSTITUTIONS</h2>
             <p>State wise list of stand alone institutions<br>
-            <a href="{{URL::asset('/institution')}}" title="1" data-gallery>View more</a></p>            
+            <a href="{{URL::asset('/information')}}" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
     

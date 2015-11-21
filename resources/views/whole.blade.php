@@ -5,8 +5,9 @@
 <div class="row animate-in" data-anim-type="fade-in-up">
 <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 scroll-me">
 	  {!!Form::open(array('url'=>'whole'))!!}
-	  <span>Search By centre</span>
+	  <span>Search By Centre</span>
 	  {!! Form::text('obj', Input::old('obj'),array('required','placeholder'=>'Eg: Cuttack')) !!}
+	  
                     {!!Form::token()!!}
 
 	

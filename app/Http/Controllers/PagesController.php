@@ -54,7 +54,7 @@ public function pin()
           $client = new Client(['base_uri' => 'https://data.gov.in/api/datastore/']);
           $category=Input::get('category');
           $response = $client->request('GET', 'resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30&filters['.$category.']='.$search);
-      dd($category);
+      //dd($category);
       $body=json_decode($response->getBody(),true);
       $res=$body["records"];
         return \View::make('result',['response'=> $res]);
@@ -129,8 +129,8 @@ public function pin()
           $result=$result+$r;
         }
       }
-      dd($result);
-      //  return \View::make('result',['response'=> $result]);
+     // dd($result);
+       return \View::make('result',['response'=> $result]);
      //   https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30&filters[state]=%22maharashtra%22
          // return Redirect::to('https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30');
       //return https://data.gov.in/api/datastore/resource.json?resource_id=e16c75b6-7ee6-4ade-8e1f-2cd3043ff4c9&api-key=f679eef3a738730ea25505cec1a62c30;
@@ -157,7 +157,8 @@ public function pincode()
         $search=Input::get('obj');
           $client = new Client(['base_uri' => 'https://data.gov.in/api/datastore/']);
           $category=Input::get('category');
-          $response = $client->request('GET', 'resource.json?resource_id=0a076478-3fd3-4e2c-b2d2-581876f56d77&api-key=f679eef3a738730ea25505cec1a62c30&filters[pincode]='.$search);
+          $response = $client->request('GET', 'resource.json?resource_id=0a076478-3fd3-4e2c-b2d2-581876f56d77&api-key=f679eef3a738730ea25505cec1a62c30&filters['.$category.']='.$search);
+      //dd($category);
       
       $body=json_decode($response->getBody(),true);
       $res=$body["records"];
