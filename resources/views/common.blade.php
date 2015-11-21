@@ -8,7 +8,7 @@
 <!--[if IE]>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <![endif]-->
-<title>E- GOVERNANCE</title>
+<title>MERI SARKAR</title>
 <!-- BOOTSTRAP CORE CSS -->
 <!-- Google fonts -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
@@ -17,6 +17,7 @@
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 <!--  Table CSS -->
 <link href="assets/css/table.css" rel="stylesheet">
+<link href="assets/css/search.css" rel="stylesheet">
 <!-- bootstrap -->
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 
@@ -36,7 +37,11 @@
 
 
 
+<script src="assets/js/jquery-1.11.1.js"></script>
+
 <script src="assets/js/table.js"></script>
+
+<script src="assets/js/search.js"></script>
 
 <link href="assets/css/bootstrap.css" rel="stylesheet" />
 <!-- ION ICONS STYLES -->
@@ -56,7 +61,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#menu-section">
+<body data-spy="scroll" data-target="#menu-section">	
 <!--MENU SECTION START-->
 <div class="navbar navbar-inverse navbar-fixed-top scroll-me" id="menu-section" >
 <div class="container">
@@ -66,9 +71,9 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="#">
+<a class="navbar-brand" href="{{URL::asset('/')}}">
 
-E- GOVERNANCE
+MERI SARKAR
 
 </a>
 </div>

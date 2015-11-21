@@ -1,0 +1,88 @@
+/*@font-face{
+
+  font-family:";
+}
+*/
+.d2s ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  box-align: start;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 180px;
+  padding-left: 0;
+}
+.d2s li {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  list-style: none;
+}
+.d2s a {
+  font-family: 'roboto';
+  background-color:  rgba(0,0,0,0.2);;
+  border: solid 1px black;
+  color: white;
+  cursor: pointer;
+
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+}
+.d2s a:hover,.d2s a:focus  {
+
+  text-decoration: none;
+  color: white;
+}
+.d2s li:not(:first-child) a {
+  border-left: 0;
+}
+.d2s a:hover {
+  background-color:  rgba(0,0,0,0.2);}
+.d2s a.picked {
+  background-color: rgba(0,0,0,0.8);
+  color: #ffffff;
+ 
+
+}
+.d2s li:first-child:not(:last-child) a {
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+}
+.d2s li:last-child:not(:first-child) a {
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+
+/* Custom code for the demo */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+input{
+border:none;
+}
+body {
+  margin: 0;
+  padding: 0 2em;
+}
+
+a {
+  color: #0cc39f;
+}
+
+.d2s {
+  margin-bottom: 2em;
+
+}

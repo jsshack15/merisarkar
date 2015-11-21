@@ -8,7 +8,7 @@
 | Here is where you can register all of the routes for an application.
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the controller to call when that URI is requested.
-|
+| 
 */
 
 Route::get('/', array('as'=>'home','uses'=>'PagesController@home'));
@@ -16,7 +16,7 @@ Route::get('information', array('as'=>'info','uses'=>'PagesController@info'));
 Route::post('search', array('before'=>'csrf','uses'=>'PagesController@search'));
 Route::get('tourist', array('as'=>'tour','uses'=>'PagesController@tour'));
 Route::post('tour', array('before'=>'csrf','uses'=>'PagesController@tourist'));
-Route::get('institution', array('as'=>'inst','uses'=>'PagesController@inst'));
+Route::get('institution', array('as'=>'inst','uses'=>'PagesController@info'));
 Route::post('inst', array('before'=>'csrf','uses'=>'PagesController@institution'));
 Route::get('wholesale', array('as'=>'whole','uses'=>'PagesController@whole'));
 Route::post('whole', array('before'=>'csrf','uses'=>'PagesController@wholesale'));

@@ -25,7 +25,7 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .btn{border:none;border-radius: 0;padding: 1em 4em;background: rgba(0,0,0,0.5);text-transform: uppercase;}
 .btn:hover,.btn:active{color: #fff;}
 .btn-default{color: #ccc;border: 1px solid #aaa;}
-.btn-default:hover,.btn-default:active{background: rgba(0,0,0,0.8);}
+.btn-default:hover,.btn-default:active{background: rgba(0,0,0,0.5);}
 .btn-primary{color: #fff;background:#00a9c6;width: 100%;outline: none;}
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus{background:#1BC0DC;box-shadow: none;}
 
@@ -66,7 +66,8 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 /*works*/
 #works{padding-top:6em;}
 #works figcaption a{border:1px solid #fff;margin-top: 1em;display: inline-block;color: #fff;padding: 0 2em;}
-#works figcaption a:hover{text-decoration: none;padding: 0 3em;}
+#works figcaption a:hover{text-decoration: none;padding: 0 3em;
+}
 /*works*/
 
 /*team*/
