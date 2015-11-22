@@ -8,10 +8,9 @@
 <div id="carousel-slider" data-ride="carousel" class="carousel slide  animate-in" data-anim-type="fade-in-up">
 
 <div class="carousel-inner">
-<div class="item active">
-
-<h3>
+<div class="item active"><h3>
 <b>FOR THE PEOPLE</b>
+
 </h3>
 <h4 style="color:white">
 Electronic governance or e-governance is the application of information and communication technology (ICT) 
@@ -226,7 +225,7 @@ MERA BHARAT!!! MERI SARKAR!!!
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 <div class="services-wrapper">
 <i class="ion-android-bus"></i>
-<h3>RTI DATA</h3>
+<h3>RTO DATA</h3>
 
 </div>
 </div>
