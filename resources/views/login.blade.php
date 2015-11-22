@@ -29,7 +29,7 @@
     </div>
 {!! Form::button('SUBMIT', array('type'=>'submit','class'=>'submit')) !!}
     
-  </form>
+  
 
                     {!! Form::close() !!}
                 
