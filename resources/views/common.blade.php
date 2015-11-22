@@ -80,15 +80,16 @@ MERI SARKAR
 <div class="navbar-collapse collapse">
 <ul class="nav navbar-nav navbar-right">
 <li><a href="{{URL::asset('/')}}">HOME</a></li>
+<li><a href="#services">SERVICES</a></li>
+<li><a href="#work">VISION</a></li>
+<li><a href="#team">TEAM</a></li>
+<li><a href="#contact">PING US</a></li>
 @if(Session::has('name'))
 <li><a href="{{URL::asset('/logout')}}">LOGOUT</a></li>
 @else
 <li><a href="{{URL::asset('/login')}}">LOGIN</a></li>
 @endif
-<li><a href="#services">SERVICES</a></li>
-<li><a href="#work">VISION</a></li>
-<li><a href="#team">TEAM</a></li>
-<li><a href="#contact">PING US</a></li>
+
 </ul>
 </div>
 
