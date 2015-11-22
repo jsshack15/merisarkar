@@ -246,7 +246,7 @@ MERA BHARAT!!! MERI SARKAR!!!
 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 <div class="team-wrapper">
 <div class="team-inner" style="background-image: url('assets/img/team/1.jpg')" >
-<a href="#" target="_blank" > <i class="fa fa-facebook" ></i></a>
+<a href="http://www.facebook.com/nelabhk" target="_blank" > <i class="fa fa-facebook" ></i></a>
 </div>
 <div class="description">
 <h3>Nelabh</h3>
@@ -260,7 +260,7 @@ MERA BHARAT!!! MERI SARKAR!!!
 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 <div class="team-wrapper">
 <div class="team-inner" style="background-image: url('assets/img/team/2.jpg')" >
-<a href="#" target="_blank" > <i class="fa fa-facebook" ></i></a>
+<a href="https://www.facebook.com/sushumna.khandelwal" target="_blank" > <i class="fa fa-facebook" ></i></a>
 </div>
 <div class="description">
 <h3> Sushumna</h3>
@@ -274,7 +274,7 @@ MERA BHARAT!!! MERI SARKAR!!!
 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 <div class="team-wrapper">
 <div class="team-inner" style="background-image: url('assets/img/team/3.jpg')" >
-<a href="#" target="_blank" > <i class="fa fa-facebook" ></i></a>
+<a href="https://www.facebook.com/asna1996" target="_blank" > <i class="fa fa-facebook" ></i></a>
 </div>
 <div class="description">
 <h3> Asna</h3>
@@ -288,7 +288,7 @@ MERA BHARAT!!! MERI SARKAR!!!
 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 <div class="team-wrapper">
 <div class="team-inner" style="background-image: url('assets/img/team/4.jpg')" >
-<a href="#" target="_blank" > <i class="fa fa-facebook" ></i></a>
+<a href="https://www.facebook.com/shasha.nk.425" target="_blank" > <i class="fa fa-facebook" ></i></a>
 </div>
 <div class="description">
 <h3> Shashank</h3>
